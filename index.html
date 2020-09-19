@@ -27,6 +27,13 @@ body, html {
   padding: 16px;
 }
 
+.hover-red-bigger:hover {
+  color:#fff!important;
+  background-color: #f44336!important;
+  padding-top:48px!important;
+  padding-bottom:48px!important;
+}
+
 /* Read More Buttons */
 #moreGovTech {display: none;}
 #moreSystmz {display: none;}
@@ -49,7 +56,7 @@ body, html {
       <a href="#profile" class="w3-bar-item w3-button">PROFILE</a>
       <a href="#experiences" class="w3-bar-item w3-button"><i class="fa fa-user"></i> EXPERIENCES</a>
       <a href="#skills" class="w3-bar-item w3-button"><i class="fa fa-th"></i> SKILLS</a>
-      <a href="#projects" class="w3-bar-item w3-button"><i class="fa fa-bars"></i> PROJECTS</a>
+      <a href="#PROJECTS" class="w3-bar-item w3-button"><i class="fa fa-bars"></i> PROJECTS</a>
       <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
     </div>
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
@@ -66,7 +73,7 @@ body, html {
   <a href="#profile" onclick="w3_close()" class="w3-bar-item w3-button">PROFILE</a>
   <a href="#experiences" onclick="w3_close()" class="w3-bar-item w3-button">EXPERIENCES</a>
   <a href="#skills" onclick="w3_close()" class="w3-bar-item w3-button">SKILLS</a>
-  <a href="#projects" onclick="w3_close()" class="w3-bar-item w3-button">PROJECTS</a>
+  <a href="#PROJECTS" onclick="w3_close()" class="w3-bar-item w3-button">PROJECTS</a>
   <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
 </nav>
 
@@ -508,7 +515,6 @@ body, html {
     <h3 class="w3-center">My Personal Skills</h3>
       <p class="w3-center w3-large">"Skill is only developed by hours and hours and hours of beating on your craft."<br> - Angela Duckworth, Grit: The Power of Passion and Perseverance</p>
       <p>Although I have been training to be a Mechanical Engineer, I have also been working hard and will continue to improve my coding abilities as I find the field of Computing to be personally more intellectually stimulating.</p>
-      <p>These are the skills that I judged myself based on comparison with my peers:</p>
     <div class="w3-col m6">
       <h4 class="w3-center"><u>Software Engineering Skills</u></h4> 
       <p class="w3-wide">Python</p>
@@ -520,6 +526,10 @@ body, html {
         <div class="w3-container w3-dark-grey w3-center" style="width:80%">80%</div>
       </div>
       <p class="w3-wide">HTML(5)</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center" style="width:70%">70%</div>
+      </div>
+      <p class="w3-wide">SQL</p>
       <div class="w3-grey">
         <div class="w3-container w3-dark-grey w3-center" style="width:70%">70%</div>
       </div>
@@ -550,56 +560,56 @@ body, html {
   </div>
 </div>
 
-<!-- projects Section -->
-<div class="w3-container w3-center w3-dark-grey w3-padding-64" id="projects">
+<!-- PROJECTS Section -->
+<div class="w3-container w3-center w3-dark-grey w3-padding-64" id="PROJECTS">
   <h3>PROJECTS</h3>
-  <p class="w3-large">Choose a projects plan that fits your needs.</p>
+  <p class="w3-large">Several ways of how I have implemented my skills in order to hone my craft</p>
   <div class="w3-row-padding" style="margin-top:64px">
     <div class="w3-third w3-section">
       <ul class="w3-ul w3-white w3-hover-shadow">
-        <li class="w3-black w3-xlarge w3-padding-32">Basic</li>
-        <li class="w3-padding-16"><b>10GB</b> Storage</li>
-        <li class="w3-padding-16"><b>10</b> Emails</li>
-        <li class="w3-padding-16"><b>10</b> Domains</li>
-        <li class="w3-padding-16"><b>Endless</b> Support</li>
+        <li class="w3-black w3-xlarge w3-padding-32 hover-red-bigger">JavaScript, HTML, CSS</li>
         <li class="w3-padding-16">
-          <h2 class="w3-wide">$ 10</h2>
-          <span class="w3-opacity">per month</span>
+          <h4 class="w3-wide">Website Development</h4>
+          <span class="w3-opacity">The desire to <em>create my own website</em> was what inspired me to take on the Coursera course. I also learnt how to use 
+            <b>Git & GitHub</b>
+            in order to post this website on my Git Page. 
+          </span>
         </li>
-        <li class="w3-light-grey w3-padding-24">
-          <button class="w3-button w3-black w3-padding-large">Sign Up</button>
-        </li>
-      </ul>
-    </div>
-    <div class="w3-third">
-      <ul class="w3-ul w3-white w3-hover-shadow">
-        <li class="w3-red w3-xlarge w3-padding-48">Pro</li>
-        <li class="w3-padding-16"><b>25GB</b> Storage</li>
-        <li class="w3-padding-16"><b>25</b> Emails</li>
-        <li class="w3-padding-16"><b>25</b> Domains</li>
-        <li class="w3-padding-16"><b>Endless</b> Support</li>
         <li class="w3-padding-16">
-          <h2 class="w3-wide">$ 25</h2>
-          <span class="w3-opacity">per month</span>
+          <h4 class="w3-wide">Carpark Simulation</h4>
+          <span class="w3-opacity">Created a <b>Decision Weighted Tree using the Breadth First Search method</b> to aid in the decision-making of a car: to determine which parking lot is optimum, and tracks the route taken by the car.
+
+          </span>
         </li>
-        <li class="w3-light-grey w3-padding-24">
-          <button class="w3-button w3-black w3-padding-large">Sign Up</button>
+        <li class="w3-padding-16">
+          <h4 class="w3-wide">Programming Foundations with JavaScript, HTML and&nbspCSS</h4>
+          <span class="w3-opacity"><a href="Website Items/Coursera Certificate Programming Foundations with JavaScript, HTML and CSS.pdf" download target="_blank"><em> Coursera Course Certificate</em></a></span>
         </li>
       </ul>
     </div>
     <div class="w3-third w3-section">
       <ul class="w3-ul w3-white w3-hover-shadow">
-        <li class="w3-black w3-xlarge w3-padding-32">Premium</li>
-        <li class="w3-padding-16"><b>50GB</b> Storage</li>
-        <li class="w3-padding-16"><b>50</b> Emails</li>
-        <li class="w3-padding-16"><b>50</b> Domains</li>
-        <li class="w3-padding-16"><b>Endless</b> Support</li>
+        <li class="w3-black w3-xlarge w3-padding-32 hover-red-bigger">Python</li>
         <li class="w3-padding-16">
-          <h2 class="w3-wide">$ 50</h2>
-          <span class="w3-opacity">per month</span>
+          <h4 class="w3-wide">Simulation of Diffusion of Water Pollution</h4>
+          <span class="w3-opacity">Utilised <em>Mathematical Numerical methods</em> to create a 2D simulation of how a drop of oil would diffuse in a river with respect to time.</span>
         </li>
-        <li class="w3-light-grey w3-padding-24">
-          <button class="w3-button w3-black w3-padding-large">Sign Up</button>
+        <li class="w3-padding-16">
+          <h4 class="w3-wide">Automating Stitching of 4096 Images</h4>
+          <span class="w3-opacity">Wrote a script automate the tedious task of stitching satellite images together in a 5x5 grid to create a map </span>
+        </li>
+        <li class="w3-padding-16">
+          <h4 class="w3-wide">Excelled in Imperial College</h4>
+          <span class="w3-opacity">Top 10% in the cohort for both 1st and 2nd year. </span>
+        </li>
+      </ul>
+    </div>
+    <div class="w3-third w3-section">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-black w3-xlarge w3-padding-32 hover-red-bigger">SQL</li>
+        <li class="w3-padding-16">
+          <h4 class="w3-wide">SQL for Data&nbspScience</h4>
+          <span class="w3-opacity"><a href="Website Items/Coursera Certificate SQL for Data Science.pdf" download target="_blank"><em> Coursera Course Certificate</em></a></span>
         </li>
       </ul>
     </div>
@@ -609,7 +619,10 @@ body, html {
 <!-- Contact Section -->
 <div class="w3-container w3-light-grey w3-padding-64" id="contact">
   <h3 class="w3-center">CONTACT</h3>
-  <p class="w3-center w3-large">Let's get in touch, feel free to send me a message!</p>
+  <p class="w3-center w3-large">Let's get in touch, please feel free to send me a message
+    <br>
+    PS: Any<em> general feedback </em>or tips to improve my website would both be greatly appreciated as well!
+  </p>
   <div style="margin-top:48px">
     <p><a href="https://www.linkedin.com/in/justinleezy/" target="_blank" title="Feel free to connect with me!"><img src="Website Items/LinkedIn Icon.png" class = "w3-xxlarge w3-margin-right" width="50" height="50">LinkedIn</a></p>
     <p><a href="mailto: justin.lee18@imperial.ac.uk" target="_blank" title="Feel free to email me!"><img src ="Website Items/Email Icon.jpg" class = "w3-xxlarge w3-margin-right" width="50" height="50"></i>Email: justin.lee18@imperial.ac.uk</a></p>
