@@ -16,17 +16,18 @@ body, html {
 
 /* Full height image header */
 .bgimg-1 {
-
   background-position: center;
   background-size:cover;
   background-image: url("Website Items/Manifesto\ Photo.jpg");
-  min-height: 100%;
+  min-height: 120%;
 }
 
+/* Buttons */
 .w3-bar .w3-button {
   padding: 16px;
 }
 
+/* Hovering buttons */
 .hover-red-bigger:hover {
   color:#fff!important;
   background-color: #f44336!important;
@@ -56,7 +57,7 @@ body, html {
       <a href="#profile" class="w3-bar-item w3-button">PROFILE</a>
       <a href="#experiences" class="w3-bar-item w3-button"><i class="fa fa-user"></i> EXPERIENCES</a>
       <a href="#skills" class="w3-bar-item w3-button"><i class="fa fa-th"></i> SKILLS</a>
-      <a href="#PROJECTS" class="w3-bar-item w3-button"><i class="fa fa-bars"></i> PROJECTS</a>
+      <a href="#projects" class="w3-bar-item w3-button"><i class="fa fa-bars"></i> PROJECTS</a>
       <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
     </div>
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
@@ -73,7 +74,7 @@ body, html {
   <a href="#profile" onclick="w3_close()" class="w3-bar-item w3-button">PROFILE</a>
   <a href="#experiences" onclick="w3_close()" class="w3-bar-item w3-button">EXPERIENCES</a>
   <a href="#skills" onclick="w3_close()" class="w3-bar-item w3-button">SKILLS</a>
-  <a href="#PROJECTS" onclick="w3_close()" class="w3-bar-item w3-button">PROJECTS</a>
+  <a href="#projects" onclick="w3_close()" class="w3-bar-item w3-button">PROJECTS</a>
   <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
 </nav>
 
@@ -83,56 +84,38 @@ body, html {
     <span class="w3-jumbo w3-hide-small">Aspiring Software Engineer</span><br>
     <span class="w3-xxlarge w3-hide-large w3-hide-medium">Aspiring Software Engineer</span><br>
     <span class="w3-large">Mechanical Engineer with the hunger for more.</span>
-    <p><a href="#profile" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Find out more about me</a></p>
+    <p><a href="#profile" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Find out more about me!</a></p>
   </div> 
 </header>
 
 <!-- Profile Section -->
-<div class="w3-container" style="padding:128px 16px" id="profile">
+<div class="w3-container  w3-light-grey" style="padding:100px 16px" id="profile">
   <h3 class="w3-center">ABOUT ME</h3>
-  <!-- <p class="w3-center w3-large">Key features of our company</p> -->
   <div class="w3-row-padding w3-center" style="margin-top:64px">
     <div class="w3-third">
       <i class="fa fa-map-marker w3-margin-bottom w3-jumbo w3-center"></i>
       <p class="w3-large">Details</p>
-      <p>Hi, I am Justin Lee, and I am a 23-year-old Singaporean, currently studying in my Penultimate Year for a Masters Degree in Mechanical Engineering in Imperial College London, United Kingdom. My contact information is available at the bottom of the page.</p>
+      <p>Hi, I am Justin Lee, a 23-year-old Singaporean. I am currently obtaining a <b>Bachelor's Degree in Mechanical Engineering</b> in Imperial College London, and I will be pursuing a 
+        <b>Master's Degree in Computer Science</b> (Oct&nbsp21&nbsp-&nbspOct&nbsp22) in Imperial as well. <br></p>
     </div>
     <div class="w3-third">
       <i class="fa fa-user w3-margin-bottom w3-jumbo"></i>
       <p class="w3-large">Personality</p>
-      <p>My core value is Integrity and I am someone who applies Empathy in everyday life. I believe I am someone who is sensitive to other people's feelings, and I place a greater emphasis on team success over individual glory. I am also a quick-learner who has the quality of perseverance.</p>
+      <p>My core value is <em>Integrity</em> and I am someone who applies empathy in everyday life. I believe I am someone who is a <em>critical&nbspthinker</em> which allows me to provide a 
+        different perspective. Being sensitive to the feelings of others has helped me to grow my <em>interpersonal skills</em>. Lastly, I am also a <em>quick-learner</em> who has the 
+        quality of perseverance.</p>
     </div>
     <div class="w3-third">
       <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
       <p class="w3-large">Passion</p>
-      <p>I have a growing hunger and passion towards Software Engineering, and I am planning to <b><em>graduate with a Bachelor Degree and take a Masters in Computing instead</em></b> . Aside from studies, I love Ultimate Frisbee and spending time with my family. I also read non-fiction books and practice meditation daily. </p>
+      <p>I have a growing hunger and passion towards Software Engineering. Aside from studies, I particularly love playing ultimate frisbee, climbing, and I am also obsessed with 
+        <em>self-improvement</em>. I have successfully cultivated the habit of meditating and reading daily, which has helped me to keep my mental well-being healthy.</p>
     </div>
-<!--     
-    <div class="w3-quarter">
-      <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
-      <p class="w3-large">Support</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-    </div> -->
-  </div>
-</div>
-
-<!-- Promo Section - "We know design" -->
-<div class="w3-container w3-light-grey w3-padding-64">
-  <div class="w3-row-padding">
-    <div class="w3-col m6">
-      <h3>What I can bring to the table.</h3>
-      <p>You can <a href="Website Items/Justin_Lee_CV.pdf" download target="_blank">Download my CV here,</a> and skip to my individual skillset:</p>
-      <p><a href="#skills" class="w3-button w3-black"><i class="fa fa-th"> </i> View My Skills</a></p>
-      <p>If you are more interested in my work and education experiences, then please scroll&nbspdown!</p>
-    </div>
-    <!-- <div class="w3-col m6">
-      <img class="w3-image w3-round-large" src="/w3images/phone_buildings.jpg" alt="Buildings" width="700" height="394">
-    </div> -->
   </div>
 </div>
 
 <!-- Experiences Section -->
-<div class="w3-container w3-padding-64" id="experiences">
+<div class="w3-container" style="padding:100px 16px" id="experiences">
   <h3 class="w3-center">My Experiences</h3>
   <p class="w3-center w3-large ">"It's not about immediate perfection. It's about learning someting over time: confronting a challenge and making progress." <br>
      - Carol S. Dweck, Mindset, The New Psychology Of Success</p>
@@ -143,11 +126,24 @@ body, html {
           <h3 class="w3-center"><u>Work Experiences</u></h3>
 
           <h4>Government Techonology Agency</h4>
-          <p class="w3-opacity w3-col m6">Software Engineering Intern ~ June 2020 - September 2020 <br>
-          <a href="https://www.tech.gov.sg/" target="_blank" title="Click to visit GovTech"><img src="Website Items/GovTech Icon.jpeg" class = "w3-xxlarge w3-margin-right" width="80" height="80" style="border: 1px solid rgb(143, 129, 129);"></a>
+          <p class="w3-opacity w3-col m5">Software Engineering Intern ~ June 2020 - September 2020 <br>
+          <a href="https://www.tech.gov.sg/" target="_blank" title="Click to visit GovTech">
+            <img src="Website Items/GovTech Icon.jpeg" class = "w3-xxlarge w3-margin-right" width="80" height="80" style="border: 1px solid rgb(143, 129, 129);">
+          </a>
           </p>
-          <p class="w3-col m6">I was mainly involved in two projects in GovTech. <br> In my first project, I successfully developed a <em>Decision Weighted Tree</em> which would be used in a 3D Car Park Simulation - to aid cars with different variables (such as <span id="dotsGovTech">...</span><span id="moreGovTech">distance from the lift lobby) in the decision making of which is the optimum parking lot which meets the minimum criteria weightage, and determine the shortest route to the destination. It was my first ever coding related project, and I was expected to code in <b>JavaScript</b> of which I had little knowledge, so it was a huge challenge but it was very fulfilling and that project was the tipping point in my decision to make a shift in my Masters Degree to Computing. 
-          <br><br> The second project requried me to work in a team to design a Static Map of Singapore and its neighbours. I was responsible for stitching over 4000 satellite images into larger texture tiles, and I utilised <b>Python</b> to automate the tedious process. After which, I had to learn how to use <em>Photoshop and Autodesk 3ds Max</em> to edit/create textures and UV Unwrap them on existing Meshes to make the map and individual buildings look more refined and pleasing to the viewer.</span></p>
+          <p class="w3-col m6">I was mainly involved in two projects in GovTech. <br> In my first project, I successfully developed a <em>Decision Weighted Tree</em> 
+            for a <b>3D Car Park Algorithm</b> to aid drivers with different variables (such as distance from the lift lobby) in the decision making of which is their optimum parking lot that 
+            <span id="dotsGovTech">...</span><span id="moreGovTech"> 
+            meets the minimum criteria weightage. The algorithm would then determine the shortest route to the destination 
+            using a <em>depth-first search</em>> method. It was a particularly challenging project as I had minimal supervision and I had to code in <b>JavaScript</b>, 
+            a language I was not familiar with then. 
+            However, I thoroughly enjoyed the process of having to simulataneously research on existing studies, learn graph theory and various algorithms, and also how to code in JavaScript. 
+            <br><br> 
+            The second project requried me to work in a team to design a Static Map of Singapore and its neighbours. 
+            I was responsible for stitching over 4000 satellite images into larger texture tiles, and I utilised <b>Python</b> to automate the otherwise tedious process. 
+            After which, I had to self-learn how to use <em>Photoshop and Autodesk 3ds Max</em> to create textures and UV unwrap them on existing meshes 
+            to make the map and individual buildings look more refined and pleasing to the viewer.</span>
+          </p>
           <button onclick="readMoreGovTech()" id="myBtnGovTech" class="w3-button w3-light-grey w3-block"><i class="fa fa-arrow-down"></i> Read More</button>
           <script>
             function readMoreGovTech() {
@@ -322,11 +318,11 @@ body, html {
                     <br>
                     - Planned trainings for 1 entire year that catered to both experienced and beginner players. 
                   </li>
-                  <li>Robotics Society ~ 2019
-                    <br>
-                    - Spent 3 hours weekly for 6 weeks in order to complete Imperial's Robotics 101 Course that focused on utilising sensors and programming to aid a robot in navigating through a maze.
-                  </li>
                 </ul>
+              </li>
+              <li>Robotics Society ~ 2019
+                <br>
+                - Spent 3 hours weekly for 6 weeks in order to complete Imperial's Robotics 101 Course that focused on utilising sensors and programming to aid a robot in navigating through a maze.
               </li>
             </ul>
             </span>
@@ -510,32 +506,32 @@ body, html {
 </div> -->
 
 <!-- Skills Section -->
-<div class="w3-container w3-light-grey w3-padding-64" id="skills">
+<div class="w3-container w3-padding-64" id="skills">
   <div class="w3-row-padding">
     <h3 class="w3-center">My Personal Skills</h3>
       <p class="w3-center w3-large">"Skill is only developed by hours and hours and hours of beating on your craft."<br> - Angela Duckworth, Grit: The Power of Passion and Perseverance</p>
-      <p>Although I have been training to be a Mechanical Engineer, I have also been working hard and will continue to improve my coding abilities as I find the field of Computing to be personally more intellectually stimulating.</p>
+      <p>Although I have been training to be a Mechanical Engineer, I have also been working hard and will continue to improve my coding abilities as I enjoy the analytical and logical thinking required of coding.</p>
     <div class="w3-col m6">
       <h4 class="w3-center"><u>Software Engineering Skills</u></h4> 
       <p class="w3-wide">Python</p>
       <div class="w3-grey">
         <div class="w3-container w3-dark-grey w3-center" style="width:90%">90%</div>
       </div>
-      <p class="w3-wide">JavaScript</p>
+      <p class="w3-wide">C</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center" style="width:85%">85%</div>
+      </div>
+      <p class="w3-wide">MatLab</p>
       <div class="w3-grey">
         <div class="w3-container w3-dark-grey w3-center" style="width:80%">80%</div>
       </div>
-      <p class="w3-wide">HTML(5)</p>
+      <p class="w3-wide">JavaScript</p>
       <div class="w3-grey">
-        <div class="w3-container w3-dark-grey w3-center" style="width:70%">70%</div>
+        <div class="w3-container w3-dark-grey w3-center" style="width:75%">75%</div>
       </div>
       <p class="w3-wide">SQL</p>
       <div class="w3-grey">
         <div class="w3-container w3-dark-grey w3-center" style="width:70%">70%</div>
-      </div>
-      <p class="w3-wide">CSS(3)</p>
-      <div class="w3-grey">
-        <div class="w3-container w3-dark-grey w3-center" style="width:60%">60%</div>
       </div>
     </div>
     <div class="w3-col m6">
@@ -552,16 +548,12 @@ body, html {
       <div class="w3-grey">
         <div class="w3-container w3-dark-grey w3-center" style="width:80%">80%</div>
       </div>
-      <p class="w3-wide">MatLab</p>
-      <div class="w3-grey">
-        <div class="w3-container w3-dark-grey w3-center" style="width:70%">70%</div>
-      </div>
     </div>
   </div>
 </div>
 
-<!-- PROJECTS Section -->
-<div class="w3-container w3-center w3-dark-grey w3-padding-64" id="PROJECTS">
+<!-- projects Section -->
+<div class="w3-container w3-center w3-dark-grey w3-padding-64" id="projects">
   <h3>PROJECTS</h3>
   <p class="w3-large">Several ways of how I have implemented my skills in order to hone my craft</p>
   <div class="w3-row-padding" style="margin-top:64px">
@@ -626,7 +618,7 @@ body, html {
   <div style="margin-top:48px">
     <p><a href="https://www.linkedin.com/in/justinleezy/" target="_blank" title="Feel free to connect with me!"><img src="Website Items/LinkedIn Icon.png" class = "w3-xxlarge w3-margin-right" width="50" height="50">LinkedIn</a></p>
     <p><a href="mailto: justin.lee18@imperial.ac.uk" target="_blank" title="Feel free to email me!"><img src ="Website Items/Email Icon.jpg" class = "w3-xxlarge w3-margin-right" width="50" height="50"></i>Email: justin.lee18@imperial.ac.uk</a></p>
-    <p><a href="Website Items/Justin_Lee_CV.pdf" download target="_blank"><img src="Website Items/CV Blue Icon.png" class = "w3-xxlarge w3-margin-right" width="50" height="50"></i>Download My CV</a></p>
+    <p><a href="Website Items/Justin Lee CV.pdf" download target="_blank"><img src="Website Items/CV Blue Icon.png" class = "w3-xxlarge w3-margin-right" width="50" height="50"></i>Download My CV</a></p>
     <p style="font-family: sans-serif;"><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right" style="color: rgb(38, 88, 196);"></i> Phone: +44 7762711868</p>
     <br>
     <form action="mailto: justin.lee18@imperial.ac.uk" target="_blank">
