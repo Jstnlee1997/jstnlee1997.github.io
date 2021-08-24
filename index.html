@@ -6,46 +6,8 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
-
-body, html {
-  height: 100%;
-  line-height: 1.8;
-}
-
-/* Full height image header */
-.bgimg-1 {
-  background-position: center;
-  background-size:cover;
-  background-image: url("Website Items/Manifesto\ Photo.jpg");
-  min-height: 120%;
-}
-
-/* Buttons */
-.w3-bar .w3-button {
-  padding: 16px;
-}
-
-/* Hovering buttons */
-.hover-red-bigger:hover {
-  color:#fff!important;
-  background-color: #f44336!important;
-  padding-top:48px!important;
-  padding-bottom:48px!important;
-}
-
-/* Read More Buttons */
-#moreGovTech {display: none;}
-#moreSystmz {display: none;}
-#morePSA {display: none;}
-#moreSAF {display: none;}
-#morePizza {display: none;}
-#moreICL {display: none;}
-#moreHCJC {display: none;}
-#moreACSI {display: none;}
-
-</style>
+<link rel="stylesheet" href="styles.css">
+<style></style>
 <body>
 
 <!-- Navbar (sit on top) -->
@@ -82,6 +44,8 @@ body, html {
 <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
   <div class="w3-display-left w3-text-white" style="padding:48px">
     <br>
+    <span class="w3-jumbo w3-hide-small">Justin Lee</span><br>
+    <span class="w3-xxlarge w3-hide-large w3-hide-medium">Justin Lee</span>
     <span class="w3-jumbo w3-hide-small">Enterprising Software Engineer</span><br>
     <span class="w3-xxlarge w3-hide-large w3-hide-medium">Enterprising Software Engineer</span>
     <p><a href="#profile" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Find out more about me!</a></p>
@@ -395,7 +359,7 @@ body, html {
 <div class="w3-container w3-center w3-dark-grey w3-padding-64" id="projects">
   <h3>PROJECTS</h3>
   <p class="w3-large">Several ways of how I have implemented my skills in order to hone my craft</p>
-  <div class="w3-row-padding" style="margin-top:64px">
+  <!-- <div class="w3-row-padding" style="margin-top:64px">
     <div class="w3-third w3-section">
       <ul class="w3-ul w3-white w3-hover-shadow">
         <li class="w3-black w3-xlarge w3-padding-32 hover-red-bigger">JavaScript, HTML, CSS</li>
@@ -444,7 +408,111 @@ body, html {
         </li>
       </ul>
     </div>
+  </div> -->
+  <!-- <div class="w3-row-padding" style="margin-top:64px;">
+    <div class="w3-margin-bottom">
+      <div class="w3-card">
+        <div class="carousel" aria-label="Gallery">
+          <div class="carousel__viewport">
+            <div id="carousel__slide1"
+                tabindex="0"
+                class="carousel__slide w3-third">
+              <div class="carousel__snapper">
+                <ul class="w3-ul w3-white w3-hover-shadow">
+                  <li class="w3-black w3-xlarge w3-padding-32 hover-red-bigger">JavaScript, HTML, CSS</li>
+                  <li class="w3-padding-16">
+                    <h4 class="w3-wide">Website Development</h4>
+                    <span class="w3-opacity">The desire to <em>create my own website</em> was what inspired me to take on the Coursera course. I also learnt how to use 
+                      <b>Git & GitHub</b>
+                      in order to post this website on my Git Page. 
+                    </span>
+                  </li>
+                  <li class="w3-padding-16">
+                    <h4 class="w3-wide">Carpark Simulation</h4>
+                    <span class="w3-opacity">Created a <b>Decision Weighted Tree using the Breadth First Search method</b> to aid in the decision-making of a car: to determine which parking lot is optimum, and tracks the route taken by the car.
+          
+                    </span>
+                  </li>
+                  <li class="w3-padding-16">
+                    <h4 class="w3-wide">Programming Foundations with JavaScript, HTML and&nbspCSS</h4>
+                    <span class="w3-opacity"><a href="Website Items/Coursera Certificate Programming Foundations with JavaScript, HTML and CSS.pdf" download target="_blank"><em> Coursera Course Certificate</em></a></span>
+                  </li>
+                </ul>
+                <a href="#carousel__slide4"
+                  class="carousel__prev">Go to last slide</a>
+                <a href="#carousel__slide2"
+                  class="carousel__next">Go to next slide</a>
+              </div>
+            </div>
+            <div id="carousel__slide2"
+                tabindex="0"
+                class="carousel__slide w3-third">
+              <div class="carousel__snapper"></div>
+              <a href="#carousel__slide1"
+                class="carousel__prev">Go to previous slide</a>
+              <a href="#carousel__slide3"
+                class="carousel__next">Go to next slide</a>
+              </div>
+            <div id="carousel__slide3"
+                tabindex="0"
+                class="carousel__slide w3-third">
+              <div class="carousel__snapper"></div>
+              <a href="#carousel__slide2"
+                class="carousel__prev">Go to previous slide</a>
+              <a href="#carousel__slide4"
+                class="carousel__next">Go to next slide</a>
+            </div>
+            <div id="carousel__slide4"
+                tabindex="0"
+                class="carousel__slide w3-third">
+              <div class="carousel__snapper"></div>
+              <a href="#carousel__slide3"
+                class="carousel__prev">Go to previous slide</a>
+              <a href="#carousel__slide1"
+                class="carousel__next">Go to first slide</a>
+            </div>
+          </div>
+          <aside class="carousel__navigation">
+            <ol class="carousel__navigation-list">
+              <li class="carousel__navigation-item">
+                <a href="#carousel__slide1"
+                  class="carousel__navigation-button">Go to slide 1</a>
+              </li>
+              <li class="carousel__navigation-item">
+                <a href="#carousel__slide2"
+                  class="carousel__navigation-button">Go to slide 2</a>
+              </li>
+              <li class="carousel__navigation-item">
+                <a href="#carousel__slide3"
+                  class="carousel__navigation-button">Go to slide 3</a>
+              </li>
+              <li class="carousel__navigation-item">
+                <a href="#carousel__slide4"
+                  class="carousel__navigation-button">Go to slide 4</a>
+              </li>
+            </ol>
+          </aside>
+        </div>
+      </div>
+    </div>
+  </div> -->
+  <div class="w3-row-padding" style="margin-top:64px; overflow: hidden;">
+    <div class="w3-margin-bottom">
+      <div class="w3-card">
+        <div style="white-space: nowrap; position: relative;">
+        <input type="radio" name="fancy" autofocus value="clubs" id="clubs" />
+        <input type="radio" name="fancy" value="hearts" id="hearts" />
+        <input type="radio" name="fancy" value="spades" id="spades" />
+        <input type="radio" name="fancy" value="diamonds" id="diamonds" />			
+        <label for="clubs">&#9827; Clubs</label><label for="hearts">&#9829; Hearts</label><label for="spades">&#9824; Spades</label><label for="diamonds">&#9830; Diamonds</label>
+
+        <div class="keys">Use left and right keys to navigate</div>
+      </div>
+      </div>
+    </div>
+    
   </div>
+  
 </div>
 
 <!-- Contact Section -->
@@ -480,110 +548,126 @@ body, html {
 </footer>
  
 <script>
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-
-// Button scripts
-function readMoreGovTech() {
-  var dots = document.getElementById("dotsGovTech");
-  var moreText = document.getElementById("moreGovTech");
-  var btnText = document.getElementById("myBtnGovTech");
-
-  if (dots.style.display === "none") {
-    dots.style.display = "inline";
-    btnText.innerHTML = "<i class='fa fa-arrow-down'></i>" + " Read More" ;
-    moreText.style.display = "none";
-  } else {
-    dots.style.display = "none";
-    btnText.innerHTML = "<i class='fa fa-arrow-up'></i>" + " Read Less" ; 
-    moreText.style.display = "inline";
+  // Modal Image Gallery
+  function onClick(element) {
+    document.getElementById("img01").src = element.src;
+    document.getElementById("modal01").style.display = "block";
+    var captionText = document.getElementById("caption");
+    captionText.innerHTML = element.alt;
   }
-}
 
-function readMoreSystmz() {
-  var dots = document.getElementById("dotsSystmz");
-  var moreText = document.getElementById("moreSystmz");
-  var btnText = document.getElementById("myBtnSystmz");
+  // Toggle between showing and hiding the sidebar when clicking the menu icon
+  var mySidebar = document.getElementById("mySidebar");
 
-  if (dots.style.display === "none") {
-    dots.style.display = "inline";
-    btnText.innerHTML = "<i class='fa fa-arrow-down'></i>" + " Read More" ;
-    moreText.style.display = "none";
-  } else {
-    dots.style.display = "none";
-    btnText.innerHTML = "<i class='fa fa-arrow-up'></i>" + " Read Less" ; 
-    moreText.style.display = "inline";
+  function w3_open() {
+    if (mySidebar.style.display === 'block') {
+      mySidebar.style.display = 'none';
+    } else {
+      mySidebar.style.display = 'block';
+    }
   }
-}
 
-function readMoreSAF() {
-  var dots = document.getElementById("dotsSAF");
-  var moreText = document.getElementById("moreSAF");
-  var btnText = document.getElementById("myBtnSAF");
-
-  if (dots.style.display === "none") {
-    dots.style.display = "inline";
-    btnText.innerHTML = "<i class='fa fa-arrow-down'></i>" + " Read More" ;
-    moreText.style.display = "none";
-  } else {
-    dots.style.display = "none";
-    btnText.innerHTML = "<i class='fa fa-arrow-up'></i>" + " Read Less" ; 
-    moreText.style.display = "inline";
+  // Close the sidebar with the close button
+  function w3_close() {
+      mySidebar.style.display = "none";
   }
-}
 
-function readMorePizza() {
-  var dots = document.getElementById("dotsPizza");
-  var moreText = document.getElementById("morePizza");
-  var btnText = document.getElementById("myBtnPizza");
+  // Button scripts
+  function readMoreGovTech() {
+    var dots = document.getElementById("dotsGovTech");
+    var moreText = document.getElementById("moreGovTech");
+    var btnText = document.getElementById("myBtnGovTech");
 
-  if (dots.style.display === "none") {
-    dots.style.display = "inline";
-    btnText.innerHTML = "<i class='fa fa-arrow-down'></i>" + " Read More" ;
-    moreText.style.display = "none";
-  } else {
-    dots.style.display = "none";
-    btnText.innerHTML = "<i class='fa fa-arrow-up'></i>" + " Read Less" ; 
-    moreText.style.display = "inline";
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      btnText.innerHTML = "<i class='fa fa-arrow-down'></i>" + " Read More" ;
+      moreText.style.display = "none";
+    } else {
+      dots.style.display = "none";
+      btnText.innerHTML = "<i class='fa fa-arrow-up'></i>" + " Read Less" ; 
+      moreText.style.display = "inline";
+    }
   }
-}
 
-function readMoreICL() {
-  var dots = document.getElementById("dotsICL");
-  var moreText = document.getElementById("moreICL");
-  var btnText = document.getElementById("myBtnICL");
+  function readMoreSystmz() {
+    var dots = document.getElementById("dotsSystmz");
+    var moreText = document.getElementById("moreSystmz");
+    var btnText = document.getElementById("myBtnSystmz");
 
-  if (dots.style.display === "none") {
-    dots.style.display = "inline";
-    btnText.innerHTML = "<i class='fa fa-arrow-down'></i>" + " Read More" ;
-    moreText.style.display = "none";
-  } else {
-    dots.style.display = "none";
-    btnText.innerHTML = "<i class='fa fa-arrow-up'></i>" + " Read Less" ; 
-    moreText.style.display = "inline";
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      btnText.innerHTML = "<i class='fa fa-arrow-down'></i>" + " Read More" ;
+      moreText.style.display = "none";
+    } else {
+      dots.style.display = "none";
+      btnText.innerHTML = "<i class='fa fa-arrow-up'></i>" + " Read Less" ; 
+      moreText.style.display = "inline";
+    }
   }
-}
 
-function readMoreHCJC() {
-  var dots = document.getElementById("dotsHCJC");
-  var moreText = document.getElementById("moreHCJC");
-  var btnText = document.getElementById("myBtnHCJC");
+  function readMoreSAF() {
+    var dots = document.getElementById("dotsSAF");
+    var moreText = document.getElementById("moreSAF");
+    var btnText = document.getElementById("myBtnSAF");
 
-  if (dots.style.display === "none") {
-    dots.style.display = "inline";
-    btnText.innerHTML = "<i class='fa fa-arrow-down'></i>" + " Read More" ;
-    moreText.style.display = "none";
-  } else {
-    dots.style.display = "none";
-    btnText.innerHTML = "<i class='fa fa-arrow-up'></i>" + " Read Less" ; 
-    moreText.style.display = "inline";
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      btnText.innerHTML = "<i class='fa fa-arrow-down'></i>" + " Read More" ;
+      moreText.style.display = "none";
+    } else {
+      dots.style.display = "none";
+      btnText.innerHTML = "<i class='fa fa-arrow-up'></i>" + " Read Less" ; 
+      moreText.style.display = "inline";
+    }
   }
-}
+
+  function readMorePizza() {
+    var dots = document.getElementById("dotsPizza");
+    var moreText = document.getElementById("morePizza");
+    var btnText = document.getElementById("myBtnPizza");
+
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      btnText.innerHTML = "<i class='fa fa-arrow-down'></i>" + " Read More" ;
+      moreText.style.display = "none";
+    } else {
+      dots.style.display = "none";
+      btnText.innerHTML = "<i class='fa fa-arrow-up'></i>" + " Read Less" ; 
+      moreText.style.display = "inline";
+    }
+  }
+
+  function readMoreICL() {
+    var dots = document.getElementById("dotsICL");
+    var moreText = document.getElementById("moreICL");
+    var btnText = document.getElementById("myBtnICL");
+
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      btnText.innerHTML = "<i class='fa fa-arrow-down'></i>" + " Read More" ;
+      moreText.style.display = "none";
+    } else {
+      dots.style.display = "none";
+      btnText.innerHTML = "<i class='fa fa-arrow-up'></i>" + " Read Less" ; 
+      moreText.style.display = "inline";
+    }
+  }
+
+  function readMoreHCJC() {
+    var dots = document.getElementById("dotsHCJC");
+    var moreText = document.getElementById("moreHCJC");
+    var btnText = document.getElementById("myBtnHCJC");
+
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      btnText.innerHTML = "<i class='fa fa-arrow-down'></i>" + " Read More" ;
+      moreText.style.display = "none";
+    } else {
+      dots.style.display = "none";
+      btnText.innerHTML = "<i class='fa fa-arrow-up'></i>" + " Read Less" ; 
+      moreText.style.display = "inline";
+    }
+  }
 
 </script>
 
