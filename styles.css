@@ -36,113 +36,158 @@ body, html {
 #moreHCJC {display: none;}
 #moreACSI {display: none;}
 
-* {
-  box-sizing: border-box;
+/*Carousel*/
+.carousel {
+  background: #ffffff;
+  text-align: center;
+  padding: 4em 0;
+  height: 7.5em;
+  max-width: max-content;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+}
+.carousel .slides {
+  width: 500%; /*Change this if another slide is added*/
+  left: 0;
+  padding-left: 0;
+  padding-top: 0em;
+  /* overflow: hidden; */
+  list-style: none;
+  position: relative;
+
+  -webkit-transition: transform .5s;
+  -moz-transition: transform .5s;
+  -o-transition: transform .5s;
+  transition: transform .5s;
+}
+.carousel .slides li {
+  width: 20%; /*Change this if another slide is added*/
+  position: relative;
+  float: left;
+}
+.carousel li p{
+  margin-top: 0;  
+  color: #777777;
+}
+.carousel li h2{
+  margin-top: -2em;
+  font-size: 24px;
+  color: #666666;
+  font-weight: 400;
+  text-decoration: underline;
+}
+.carousel li video {
+  position: relative;
+  max-width: 100%;
+}
+.carousel li img {
+  max-width: 100%;
+}
+.carousel .slidesNavigation {
+  display: block;
+  list-style: none;
+  text-align: center;
+  bottom: 1em;
+  /*--- Centering trick---*/
+    /* Absolute positioning*/
+    position: absolute; 
+    /* Abosulte positioning*/
+    /*Change this if another slide is added*/
+    width: 130px; /*This width  is the addition of the width of all the navigations dots - So in this case is   104 because the navigation dots are 26px (width:10px and 6px marginleft + 6 px marginright) and there are 4 dots so 4x26=104 */
+    left: 50%; /*Centering de element*/
+    margin-left: -65px; /*adjusting the centering by applying a negative margin of half of the width*/
+}
+.carousel input {
+  display: none;
+}
+.carousel .slidesNavigation label {
+  float: left;
+  margin: 6px;
+  display: block;
+  height: 10px;
+  width: 10px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  border: solid 2px #2980b9;
+  font-size: 0;
+}
+/* You have to repeat this with each slide
+TODO: make it easier with SCSS
+25% movement 100/slides-num
+*/
+/*Change this if another slide is added*/
+#radio-1:checked ~ .slides {
+  transform: translateX(0%);
+}
+#radio-2:checked ~ .slides {
+  transform: translateX(-20%);
+}
+#radio-3:checked ~ .slides {
+  transform: translateX(-40%);
+}
+#radio-4:checked ~ .slides {
+  transform: translateX(-60%);
+}
+#radio-5:checked ~ .slides {
+  transform: translateX(-80%);
 }
 
-label {
-	background: #444;
-	color: #fff;
-	transition: transform 400ms ease-out;
-	display: inline-block;
-  min-height: 100%;
-	width: 100%;
-	height: 100%;
-	position: relative;
-	z-index: 1;
-	text-align: center;
-	line-height: 100vh;
+
+.carousel .slidesNavigation label:hover {
+   cursor: pointer;
+}
+/* You have to repeat this with each slide/dot */
+.carousel #radio-1:checked ~ .slidesNavigation label#dotForRadio-1,
+.carousel #radio-2:checked ~ .slidesNavigation label#dotForRadio-2,
+.carousel #radio-3:checked ~ .slidesNavigation label#dotForRadio-3,
+.carousel #radio-4:checked ~ .slidesNavigation label#dotForRadio-4,
+.carousel #radio-5:checked ~ .slidesNavigation label#dotForRadio-5 {
+  background: #2980b9;
 }
 
-#projectForm {
-	position: sticky;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	white-space: nowrap;
+@media  (max-width: 796px) {
+  .carousel{
+    height: 8.5em;
+  }
+}
+@media  (max-width: 480px) {
+  .carousel li p {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+  .carousel li q {
+      font-size: 1em;
+  }
 }
 
-input[name="fancy"] {
-	position: absolute;
+.slide li {
+  font: 200 20px/1.5 Helvetica, Verdana, sans-serif;
+  border-bottom: 1px solid #ccc;
+  clear: left;
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
 }
 
-.keys {
-	position: fixed;
-	z-index: 10;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	padding: 1rem;
-	color: #fff;
-	text-align: center;
-	transition: all 300ms linear;
-	opacity: 0;
+.slide li:last-child {
+  border: none;
 }
 
-input[name="fancy"]:focus ~ .keys {
-	opacity: 0.8;
+.slide li a {
+  text-decoration: none;
+  color: #000;
+  display: block;
+  max-width: 100%;
+  /* width: 200px; */
+ 
+  -webkit-transition: font-size 0.2s ease, background-color 0.2s ease;
+  -moz-transition: font-size 0.2s ease, background-color 0.2s ease;
+  -o-transition: font-size 0.2s ease, background-color 0.2s ease;
+  -ms-transition: font-size 0.2s ease, background-color 0.2s ease;
+  transition: font-size 0.2s ease, background-color 0.2s ease;
 }
-
-input[name="fancy"]:nth-of-type(1):checked ~ label:nth-of-type(1), 
-input[name="fancy"]:nth-of-type(2):checked ~ label:nth-of-type(2),
-input[name="fancy"]:nth-of-type(3):checked ~ label:nth-of-type(3),
-input[name="fancy"]:nth-of-type(4):checked ~ label:nth-of-type(4){
-   z-index: 0;
-}
-
-input[name="fancy"]:nth-of-type(1):checked ~ label {
-	transform: translate3d(0, 0, 0);
-}
-
-input[name="fancy"]:nth-of-type(2):checked ~ label {
-	transform: translate3d(-100%, 0, 0);
-}
-
-input[name="fancy"]:nth-of-type(3):checked ~ label {
-	transform: translate3d(-200%, 0, 0);
-}
-
-input[name="fancy"]:nth-of-type(4):checked ~ label {
-	transform: translate3d(-300%, 0, 0);
-}
-
-label {
-	background: #444;
-	background-size: cover;
-	font-size: 3rem;
-}
-
-label[for="diamonds"],
-label[for="hearts"] {
-	background: #cc0000;
-}
-
-label:before,
-label:after {
-	color: white;
-	display: block;
-	background: rgba(255,255,255,0.2);
-	position: absolute;
-	padding: .7rem;
-	font-size: 3rem;
-	height: 10rem;
-	line-height: 9rem;
-	top: 50%;
-	transform: translate3d(0, -50%, 0);
-	cursor: pointer;
-}
-
-label:before {
-	content: "\276D";
-	right: 100%;
-	border-top-left-radius: 50%;
-	border-bottom-left-radius: 50%;
-}
-
-label:after {
-	content: "\276C";
-	left: 100%;
-	border-top-right-radius: 50%;
-	border-bottom-right-radius: 50%;
+ 
+.slide li a:hover {
+  font-size: 30px;
+  background: #f6f6f6;
 }
